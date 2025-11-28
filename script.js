@@ -45,3 +45,4 @@ darkModeToggle.addEventListener('click', function () {
     document.querySelector('.footer').classList.toggle('dark-mode');
 });
 
+

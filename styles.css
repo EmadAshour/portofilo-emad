@@ -359,5 +359,152 @@ body.dark-mode {
 .footer.dark-mode {
     background-color: #1e1e1e;
 }
+/* ===== Contact Form ===== */
 
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
 
+.form-contact {
+  background-color: #ffffff;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-contact h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.group-form {
+  margin-bottom: 1rem;
+}
+
+.group-form label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.group-form input,
+.group-form textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.group-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #005fcc;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* ===== Responsiveness (small screens) ===== */
+
+@media (max-width: 500px) {
+  .form-contact {
+    padding: 1.25rem;
+  }
+
+  .form-contact h3 {
+    font-size: 1.05rem;
+  }
+
+  .group-form input,
+  .group-form textarea {
+    font-size: 0.9rem;
+  }
+}
+.send-link {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.send-link i {
+  font-size: 0.95rem;
+}
+.send-link a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.send-link a:hover {
+  opacity: 0.7;
+}
+sms-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sms-box input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+#sms-send-btn {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+}
+
+.send-link {
+  margin-top: 35px;
+}
+.sms-box {
+  margin-bottom: 35px;  /* مسافة بين زر SMS والسطر الذي بعده */
+}
+.send-link {
+  margin-top: 10px; /* مسافة بسيطة فوق Send a message */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.send-link i {
+  font-size: 25px;
+  margin-right: 6px;
+}
